@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Shailen Chhetri</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/locomotive-scroll.css">
+    <script src="./js/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
 </head>
 
-<body>
-    <header>
-        <nav>
+<body data-scroll-container>
+    <header data-scroll-section>
+        <nav data-scroll>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -22,78 +27,222 @@
             </ul>
         </nav>
         <div class="header-content">
-            <h1>Shailen Chhetri</h1>
-            <p>Mobile Stack Developer</p>
+            <h1 id="name" data-scroll data-scroll-id="name">Shailen Chhetri</h1>
+            <p id="designation" data-scroll>Software Engineer</p>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I'm a passionate full stack developer with experience in building web applications using the latest
-            technologies.</p>
+    <section id="about" class="section" data-scroll-section>
+        <h2 data-scroll id="about-anime">About Me</h2>
+        <p data-scroll data-scroll-speed="1" style="margin-top: 4.5vh;">
+            Hello! I'm Shailen Chhetri, a passionate and innovative <span>Mobile Stack Developer</span> with a deep love
+            for crafting elegant
+            code and solving complex problems. With 3 years of experience in the industry, I've had the privilege of
+            working on a wide range of projects, from small startups to large-scale enterprise applications.
+        </p>
+        <p data-scroll data-scroll-speed="2" style="margin-top: 3.5vh;">
+            I approach each project with a commitment to excellence, striving for clean and efficient code that not only
+            meets the functional requirements but also sets a high standard for maintainability and scalability. I
+            believe that great software should not only work flawlessly but should also be a joy to work with for
+            developers and users alike.
+        </p>
     </section>
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>Node.js, Express.js</li>
-            <li>React, Vue.js</li>
-            <li>Python, Django</li>
-            <li>Database design and management</li>
-            <li>Version control with Git</li>
-        </ul>
+    <section id="skills" data-scroll-section class="section">
+        <h2 data-scroll data-scroll-speed="1.5">Skills</h2>
+        <div data-scroll data-scroll-speed="1" class="skill-container">
+            <div>
+                <h3>Full Stack Development</h2>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, React, React Native</li>
+                        <li>Node.js, Express.js</li>
+                        <li>PostgreSQL, MongoDB</li>
+                        <li>RESTful Api Development</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Mobile Technologies</h2>
+                    <ul>
+                        <li>Redux, ReduxThunk, Redux persistance</li>
+                        <li>Payment gateway with Stripe, Paypal,etc</li>
+                        <li>Realtime Calling functionality using Agora</li>
+                        <li>Animation using reanimated libaray</li>
+                    </ul>
+            </div>
+        </div>
+        <div data-scroll data-scroll-speed="1.5" class="skill-container">
+            <div>
+                <h3>Web Technologies</h2>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Cross-Browser Compatibility</li>
+                        <li>Single Page Applications (SPA)</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Version Control & Collaboration</h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub/GitLab</li>
+                        <li>Code Reviews</li>
+                        <li>Collaborative Development</li>
+                    </ul>
+            </div>
+        </div>
+        <div data-scroll data-scroll-speed="1" class="skill-container">
+            <div>
+                <h3>Testing & Quality Assurance</h2>
+                    <ul>
+                        <li>Jest, JUnit</li>
+                        <li>Selenium</li>
+                        <li>Continuous Integration (CI/CD): Jenkins</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Agile Methodologies</h2>
+                    <ul>
+                        <li>Scrum</li>
+                        <li>Kanban</li>
+                        <li>Sprint Planning</li>
+                        <li>Daily Stand-ups</li>
+                    </ul>
+            </div>
+        </div>
+        <div data-scroll data-scroll-speed="1.5" class="skill-container">
+            <div>
+                <h3>DevOps Fundamentals</h2>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Containerization</li>
+                        <li>AWS (Amazon Web Services): S3, EC2</li>
+                    </ul>
+            </div>
+            <div>
+                <h3>Problem Solving & Algorithms</h2>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Algorithm Design</li>
+                        <li>Optimization</li>
+                    </ul>
+            </div>
+        </div>
+        <div data-scroll data-scroll-speed="1" class="skill-container">
+            <div>
+                <h3>Other Extra Skills</h2>
+                    <ul>
+                        <li>Firebase , Googgle Map </li>
+                        <li>Cross-Functional Communication</li>
+                        <li>Algorithm Design</li>
+                        <li>Documentation</li>
+                    </ul>
+            </div>
+        </div>
     </section>
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <div class="education">
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p>[University Name], [Year of Graduation]</p>
+    <section id="education" data-scroll-section class="section">
+        <h2 data-scroll data-scroll-speed="2">Education</h2>
+        <div data-scroll data-scroll-speed="1" class="education">
+            <h3>Bachelor of Technology in Computer Science Engineering</h3>
+            <p>SBBS University, 2020 AD</p>
+        </div>
+        <div data-scroll data-scroll-speed="2" class="education">
+            <h3>High School +2</h3>
+            <p>Tilotama Higher Secondary School, 2016 AD</p>
+        </div>
+        <div data-scroll data-scroll-speed="1" class="education">
+            <h3>Class 10 (SLC)</h3>
+            <p>Sunrise English Boarding School, 2014 AD</p>
+        </div>
+        <div data-scroll data-scroll-speed="2" class="education">
+            <h3>Professional Diploma in Computer Application (1 year)</h3>
+            <p>Rightstep Education, 2011 AD</p>
         </div>
         <!-- Add more education details as needed -->
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" data-scroll-section class="section">
         <h2>Working Experience</h2>
         <div class="experience">
-            <h3>Software Engineer | [Company Name] | [Dates]</h3>
-            <p>Developed and maintained web applications using HTML, CSS, and JavaScript. Collaborated with
-                cross-functional teams to deliver high-quality solutions.</p>
+            <h3>Senior Software Engineer | Sachtech Solution | Jan 2023 - present</h3>
+            <ul>
+                <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                <li>Collaborated closely with cross-functional teams to deliver high-quality solutions.</li>
+                <li>Contributed to the success of the company by ensuring the delivery of robust and efficient software products.</li>
+                <li>Architected complex systems, optimized code for performance, and mentored junior developers.</li>
+            </ul>
         </div>
+        <div class="experience">
+            <h3>React Native & Node.js Developer | Sachtech Solution | Sep 2021</h3>
+            <ul>
+                <li>Specialized in developing and maintaining web applications using React Native and Node.js.</li>
+                <li>Created feature-rich applications that met and exceeded client expectations.</li>
+                <li>Collaborated with cross-functional teams, implemented responsive designs, and optimized application performance.</li>
+                <li>Contributed significantly to the company's projects, ensuring timely deliveries and client satisfaction.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h3>Associate React Native Developer | Sachtech Solution | Sep 2020</h3>
+            <ul>
+                <li>Contributed to the development and maintenance of web applications, focusing on React Native technology.</li>
+                <li>Gained hands-on experience in building mobile apps, debugging issues, and enhancing user experiences.</li>
+                <li>Worked closely with the development team, absorbing knowledge and applying best practices.</li>
+                <li>Delivered high-quality solutions that met industry standards.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h3>Python Intern | Sachtech Solution | Jan 2020 (6 months)</h3>
+            <ul>
+                <li>Participated in an internship focused on web application development using Python.</li>
+                <li>Contributed actively to coding efforts, learned about web technologies, and collaborated with the team.</li>
+                <li>Delivered solutions to various projects, gaining a strong foundation in software development and problem-solving.</li>
+                <li>Acquired insights into the professional world of technology.</li>
+            </ul>
+        </div>
+        
         <!-- Add more experience details as needed -->
     </section>
-
-
-
-    <section id="projects" class="section">
+    <section id="projects" data-scroll-section class="section">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project 1</h3>
-            <p>An e-commerce platform built with React and Node.js, featuring user authentication and payment
-                integration.</p>
+            <h3>FairGame - Online Betting Platform</h3>
+            <div class="project-content">
+                <!-- Project Image -->
+                <!-- <img src="./assets/fair.png" alt="Project 1 Image" class="project-image"> -->
+                <!-- Project Description -->
+                <p>FairGame is an online betting platform designed and built using React.js and Material-UI. As a freelance project, the goal was to create a modern, user-friendly <a href="https://fairgame.vercel.app/matches" target="_blank">betting website</a> that offers a seamless experience for both regular users and administrators. Key features include a mobile-friendly design, an admin panel for master users, and an intuitive user interface for placing bets and managing the platform.</p>
+            </div>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>A blog application developed using Django, allowing users to create, edit, and delete posts.</p>
+            <h3>Glisten Astrology - Astrology Chat Platform</h3>
+            <div class="project-content">
+                <!-- Project Image -->
+                <!-- <img src="project2.jpg" alt="Project 2 Image" class="project-image"> -->
+                <!-- Project Description -->
+                <p>Glisten Astrology is a bespoke astrology consultation platform designed and developed using React.js and Material-UI. This freelance project aims to provide a seamless and user-friendly experience for both astrologers and users seeking astrological guidance. Key features include an admin panel for master users, a mobile-friendly design, and payment integration via Stripe to offer multiple payment methods. Explore the project <a href="https://www.glistenastrology.com/" target="_blank">here</a>.</p>
+            </div>
         </div>
+        <div class="project">
+            <h3>Spam Detection Web App</h3>
+            <div class="project-content">
+                <!-- Project Image -->
+                <!-- <img src="project2.jpg" alt="Project 2 Image" class="project-image"> -->
+                <!-- Project Description -->
+                <p>The Spam Detection Web Application is a user-friendly online tool developed to identify and classify text messages or documents as either spam or non-spam (ham). Built using Express.js for the backend and incorporating the Natural language processing library, this web application provides a simple interface for users to submit text data and receive instant feedback on whether it contains spam content. The application aims to enhance user data security by detecting and filtering out unwanted or potentially harmful messages. Experience the tool <a href="https://github.com/liahs/spam" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <p>Note: During my tenure as a developer in a company, I published more than 10 React Native projects on Google Play Store and Apple App Store, reaching a global audience.</p> 
         <!-- Add more projects as needed -->
     </section>
-
-    <section id="contact" class="section">
+    <section id="contact" data-scroll-section class="section">
         <h2>Contact Me</h2>
-        <p>If you're interested in working together, feel free to reach out:</p>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="[LinkedIn Profile URL]">LinkedIn Profile</a></p>
+        <p>If you're interested in working together or have any inquiries, please feel free to reach out:</p>
+        <p>Email: <a href="mailto:liahschhetri2@gmail.com">liahschhetri2@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/liahs/" target="_blank">LinkedIn Profile</a></p>
     </section>
-
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    <footer data-scroll-section>
+        <p>&copy; 2023 Shailen Chhetri. All rights reserved.</p>
     </footer>
     <div class="social-icons">
-        <a href="[Instagram Link]" target="_blank" class="social-icon instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
         <a href="[YouTube Link]" target="_blank" class="social-icon youtube">
-            <i  class="fab fa-youtube"></i>
+            <i class="fab fa-youtube"></i>
         </a>
         <a href="[GitHub Link]" target="_blank" class="social-icon github">
             <i class="fab fa-github"></i>
@@ -102,7 +251,7 @@
             <i class="fab fa-facebook"></i>
         </a>
     </div>
-
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,258 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Fira Code', monospace;
+    line-height: 1.6;
+    background-color: #F8F8F8;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    height: 100vh;
+}
+
+.header-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+.header-content h1 {
+    font-size: 7rem;
+    scale: 3;
+    opacity: 0;
+    /* opacity: 0; */
+}
+
+.header-content p {
+    font-size: 2.2rem;
+    scale: 3;
+    opacity: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 15vw;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section h2 {
+    font-size: 3.5rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+
+}
+
+/* skills */
+
+#skills,
+#experience,
+#contact {
+    background-color: #333;
+    color: white;
+}
+
+#skills h2,
+#experience h2,
+#contact h2 {
+    color: white;
+}
+
+/* Apply basic styling to skill containers */
+.skill-container {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    border-bottom: 1px solid #ccc;
+    /* Add a horizontal line between skill sections */
+    padding: 20px 0;
+    /* Add some padding for spacing */
+}
+
+.skill-container div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the headings */
+.skill-container h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the list items */
+.skill-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-container li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        /* Stack skill sections vertically on smaller screens */
+    }
+
+    /* Adjust spacing for smaller screens */
+    .skill-container:not(:last-child) {
+        margin-bottom: 20px;
+        /* Add margin between skill sections */
+        border-bottom: none;
+        /* Remove horizontal line between skill sections */
+    }
+}
+
+
+/* education styles */
+.education h3, .experience h3  {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 6vh;
+}
+.education p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.experience ul{
+    margin-top: 10px;
+    list-style: none;
+}
+/* Define your custom link color and visited link color */
+a {
+    color: #007bff; /* Your custom link color */
+    text-decoration: none; /* Remove underline for normal link */
+}
+
+a:visited {
+    color: #007bff; /* Your custom link color for visited links (remains the same color after being clicked) */
+}
+
+/* Project Styles */
+.project {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* contact style */
+#contact{
+    min-height: 40vh;
+    height: 40vh;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: -10px;
+}
+
+/* Social Icons Styles */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.social-icon {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+}
+
+.social-icon:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.instagram {
+    background-color: #333;
+}
+
+.youtube {
+    background-color: #333;
+}
+
+.github {
+    background-color: #333;
+}
+
+.facebook {
+    background-color: #333;
+}
