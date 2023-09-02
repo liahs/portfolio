@@ -55,6 +55,17 @@ scroll.on('scroll', (args) => {
 
 
 
-
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default link behavior
+        const targetId = link.getAttribute('href').substring(1); // Get the target section's ID
+        let options={offset :10}
+        if("about-education".includes(targetId)){
+            options.offset=100
+        }
+        // Use Locomotive Scroll to scroll to the target section
+        scroll.scrollTo(`[data-scroll-section="${targetId}"]`,options);
+    });
+});
 
 
