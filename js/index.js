@@ -104,9 +104,27 @@ const colorSchemes = [
     },
 ]
 
+const getNumber=()=>{
+    let previousNumber=Number(localStorage.getItem("colorValue"))
+
+    if(previousNumber>=0){
+        if(previousNumber==3){
+            localStorage.setItem("colorValue",0)
+            return 0
+        }else{
+            let newValue=previousNumber+1
+            localStorage.setItem("colorValue",newValue)
+            return newValue
+        }
+        
+    }
+    localStorage.setItem("colorValue",0)
+    return 0
+}
+
 // on dom load change color
 window.addEventListener('load', function () {
-    const randomNumber = Math.floor(Math.random() * 4);
+    const randomNumber = getNumber()
     document.documentElement.style.setProperty('--main-background-color', colorSchemes[randomNumber].main_background_color);
     document.documentElement.style.setProperty('--text-color', colorSchemes[randomNumber].text_color);
     document.documentElement.style.setProperty('--header-background-color', colorSchemes[randomNumber].header_background_color);
