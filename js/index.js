@@ -105,8 +105,7 @@ const colorSchemes = [
 ]
 
 const getNumber=()=>{
-    let previousNumber=Number(localStorage.getItem("colorValue"))
-
+    let previousNumber=Number(localStorage.getItem("colorValue")??-1)
     if(previousNumber>=0){
         if(previousNumber==3){
             localStorage.setItem("colorValue",0)

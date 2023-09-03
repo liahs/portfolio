@@ -148,21 +148,7 @@ nav a {
     font-size: 1rem;
 }
 
-/* Media query for mobile responsiveness */
-@media (max-width: 768px) {
-    .skill-container {
-        flex-direction: column;
-        /* Stack skill sections vertically on smaller screens */
-    }
 
-    /* Adjust spacing for smaller screens */
-    .skill-container:not(:last-child) {
-        margin-bottom: 20px;
-        /* Add margin between skill sections */
-        border-bottom: none;
-        /* Remove horizontal line between skill sections */
-    }
-}
 
 
 /* education styles */
@@ -274,4 +260,20 @@ footer {
 
 .facebook {
     background-color:var(--header-background-color);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        /* Stack skill sections vertically on smaller screens */
+    }
+
+    /* Adjust spacing for smaller screens */
+    .skill-container:not(:last-child) {
+        margin-bottom: 20px;
+        /* Add margin between skill sections */
+        border-bottom: none;
+        /* Remove horizontal line between skill sections */
+    }
 }
