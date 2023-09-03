@@ -241,6 +241,10 @@ footer {
 
 }
 
+.social-icon:visited{
+    color: white;
+}
+
 .social-icon:hover {
     background-color: #333;
     transform: scale(1.1);
