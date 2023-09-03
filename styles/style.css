@@ -1,3 +1,14 @@
+/* Define color variables in :root */
+:root {
+    --main-background-color: #F8F8F8;
+    --text-color: #333;
+    --header-background-color: #333;
+    --header-text-color: white;
+    --link-color: #007bff; /* Custom link color */
+    --link-visited-color: #007bff; /* Custom visited link color */
+}
+
+
 /* Reset default margin and padding */
 body,
 h1,
@@ -14,16 +25,16 @@ li {
 body {
     font-family: 'Fira Code', monospace;
     line-height: 1.6;
-    background-color: #F8F8F8;
-    color: #333;
+    background-color:var(--main-background-color);
+    color: var(--text-color);
 }
 
 /* Header Styles */
 header {
     display: flex;
     flex-direction: column;
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
     text-align: center;
     padding: 2rem 0;
     height: 100vh;
@@ -60,7 +71,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--header-text-color);
     margin: 0 1rem;
 }
 
@@ -78,7 +89,7 @@ nav a {
 
 .section h2 {
     font-size: 3.5rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 #about p {
@@ -92,14 +103,14 @@ nav a {
 #skills,
 #experience,
 #contact {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
 }
 
 #skills h2,
 #experience h2,
 #contact h2 {
-    color: white;
+    color: var(--header-text-color);
 }
 
 /* Apply basic styling to skill containers */
@@ -171,21 +182,20 @@ nav a {
 }
 /* Define your custom link color and visited link color */
 a {
-    color: #007bff; /* Your custom link color */
+    color: var(--link-color); /* Your custom link color */
     text-decoration: none; /* Remove underline for normal link */
 }
 
 a:visited {
-    color: #007bff; /* Your custom link color for visited links (remains the same color after being clicked) */
+    color: var(--link-visited-color); /* Your custom link color for visited links (remains the same color after being clicked) */
 }
 
 nav a:visited {
-    color: white !important;
+    color: var(--header-text-color) !important;
 }
 
 /* Project Styles */
 .project {
-    background-color: white;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -206,8 +216,8 @@ nav a:visited {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
     text-align: center;
     padding: 1rem 0;
     margin-top: -10px;
@@ -227,7 +237,7 @@ footer {
 
 .social-icon {
     background-color: #007BFF;
-    color: white;
+    color: var(--header-text-color);
     font-size: 1.5rem;
     width: 40px;
     height: 40px;
@@ -242,26 +252,26 @@ footer {
 }
 
 .social-icon:visited{
-    color: white;
+    color: var(--header-text-color);
 }
 
 .social-icon:hover {
-    background-color: #333;
+    background-color: var(--header-background-color);
     transform: scale(1.1);
 }
 
 .instagram {
-    background-color: #333;
+    background-color: var(--header-background-color);
 }
 
 .youtube {
-    background-color: #333;
+    background-color: var(--header-background-color);
 }
 
 .github {
-    background-color: #333;
+    background-color:var(--header-background-color);
 }
 
 .facebook {
-    background-color: #333;
+    background-color:var(--header-background-color);
 }
