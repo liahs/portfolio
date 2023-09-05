@@ -4,8 +4,10 @@
     --text-color: #333;
     --header-background-color: #333;
     --header-text-color: white;
-    --link-color: #007bff; /* Custom link color */
-    --link-visited-color: #007bff; /* Custom visited link color */
+    --link-color: #007bff;
+    /* Custom link color */
+    --link-visited-color: #007bff;
+    /* Custom visited link color */
 }
 
 
@@ -25,7 +27,7 @@ li {
 body {
     font-family: 'Fira Code', monospace;
     line-height: 1.6;
-    background-color:var(--main-background-color);
+    background-color: var(--main-background-color);
     color: var(--text-color);
 }
 
@@ -152,28 +154,34 @@ nav a {
 
 
 /* education styles */
-.education h3, .experience h3  {
+.education h3,
+.experience h3 {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 6vh;
 }
+
 .education p {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.experience ul{
+.experience ul {
     margin-top: 10px;
     list-style: none;
 }
+
 /* Define your custom link color and visited link color */
 a {
-    color: var(--link-color); /* Your custom link color */
-    text-decoration: none; /* Remove underline for normal link */
+    color: var(--link-color);
+    /* Your custom link color */
+    text-decoration: none;
+    /* Remove underline for normal link */
 }
 
 a:visited {
-    color: var(--link-visited-color); /* Your custom link color for visited links (remains the same color after being clicked) */
+    color: var(--link-visited-color);
+    /* Your custom link color for visited links (remains the same color after being clicked) */
 }
 
 nav a:visited {
@@ -195,7 +203,7 @@ nav a:visited {
 
 
 /* contact style */
-#contact{
+#contact {
     min-height: 40vh;
     height: 40vh;
 }
@@ -237,7 +245,7 @@ footer {
 
 }
 
-.social-icon:visited{
+.social-icon:visited {
     color: var(--header-text-color);
 }
 
@@ -255,25 +263,94 @@ footer {
 }
 
 .github {
-    background-color:var(--header-background-color);
+    background-color: var(--header-background-color);
 }
 
 .facebook {
-    background-color:var(--header-background-color);
+    background-color: var(--header-background-color);
 }
 
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
+    body {
+        line-height: 1.4;
+    }
+
+    nav ul {
+        /* display: none; */
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0rem;
+    }
+
+    .header-content {
+        height: 80vh;
+    }
+
+    .header-content h1 {
+        font-size: 4rem;
+    }
+
+    .header-content p {
+        font-size: 1.5rem;
+        margin-bottom: 10vh;
+        margin-top: 4vh;
+    }
+
+    /* Section Styles */
+    .section {
+        padding: 4rem 5vw;
+        min-height: 70vh;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
     .skill-container {
         flex-direction: column;
+        padding: 0 0;
+        border-bottom: 0;
+        margin-top: 10px;
         /* Stack skill sections vertically on smaller screens */
     }
 
-    /* Adjust spacing for smaller screens */
-    .skill-container:not(:last-child) {
-        margin-bottom: 20px;
-        /* Add margin between skill sections */
-        border-bottom: none;
-        /* Remove horizontal line between skill sections */
+
+
+    .skill-container div {
+        margin-bottom: 30px;
+    }
+
+    /* Style the headings */
+    .skill-container h3 {
+        font-size: 1rem;
+    }
+
+    .skill-container li {
+        font-size: 14px;
+    }
+
+    /* education styles */
+    .education h3,
+    .experience h3,
+    .project h3 
+    {
+        font-size: 1rem;
+    }
+
+    .education p,
+    .experience li,
+    .project-content p,
+    #projects p,
+    #contact p,
+    footer p
+    {
+        font-size: 14px;
     }
 }
