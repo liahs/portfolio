@@ -1,282 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shailen Chhetri</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/locomotive-scroll.css">
-    <script src="./js/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shailen Chhetri: mobile engineer</title>
+<meta name="description" content="Shailen Chhetri is a mobile engineer (React Native, Expo, Node.js) at myBlueprint and the maker of apps and games at Sindie Labs.">
+<meta name="theme-color" content="#FFF8F3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Caveat:wght@700&amp;family=DM+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles/doodle.css">
 </head>
-
-<body data-scroll-container>
-    <header data-scroll-section>
-        <nav data-scroll>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1 id="name" data-scroll data-scroll-id="name">Shailen Chhetri</h1>
-            <p id="designation" data-scroll>Software Engineer</p>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Home">
+      <img src="./assets/sindielabs-logo.svg" alt="" width="42" height="42">
+      <span><b>Shailen Chhetri</b><small>mobile engineer</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a class="pill" href="#contact">Say hi</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">React Native &amp; mobile engineer</p>
+        <h1 id="hero-title">I build mobile apps, <span class="doodle">one doodle</span> at a time.</h1>
+        <p class="lede">Six years shipping React Native apps to the App Store and Google Play. Today I'm an Intermediate Mobile Developer at <strong>myBlueprint</strong>, and I run <strong>Sindie Labs</strong> on the side.</p>
+        <div class="actions">
+          <a class="button" href="#projects">See my work</a>
+          <a class="button-ghost" href="./resume.pdf">Resume (PDF)</a>
         </div>
-    </header>
-
-    <section id="about" class="section" data-scroll-section="about">
-        <h2 data-scroll id="about-anime">About Me</h2>
-        <p data-scroll data-scroll-speed="1" style="margin-top: 4.5vh;">
-            Hello! I'm Shailen Chhetri, a passionate and innovative <span>Mobile Stack Developer</span> with a deep love
-            for crafting elegant
-            code and solving complex problems. With 6 years of experience in the industry, I've had the privilege of
-            working on a wide range of projects, from small startups to large-scale enterprise applications. I currently work as an Intermediate Mobile Developer at myBlueprint and hold an MSc in Data Science.
-        </p>
-        <p data-scroll data-scroll-speed="2" style="margin-top: 3.5vh;">
-            I approach each project with a commitment to excellence, striving for clean and efficient code that not only
-            meets the functional requirements but also sets a high standard for maintainability and scalability. I
-            believe that great software should not only work flawlessly but should also be a joy to work with for
-            developers and users alike.
-        </p>
-    </section>
-    <section id="skills" data-scroll-section="skills" class="section">
-        <h2 data-scroll data-scroll-speed="1.5">Skills</h2>
-        <div data-scroll data-scroll-speed="1" class="skill-container">
-            <div>
-                <h3>Full Stack Development</h2>
-                    <ul>
-                        <li>HTML, CSS, JavaScript, TypeScript, React, React Native, Expo</li>
-                        <li>Node.js, Express.js</li>
-                        <li>PostgreSQL, MongoDB</li>
-                        <li>RESTful API Development</li>
-                    </ul>
-            </div>
-            <div>
-                <h3>Mobile Technologies</h2>
-                    <ul>
-                        <li>Redux, ReduxThunk, Redux Persist</li>
-                        <li>Payment gateways: Stripe, PayPal, etc.</li>
-                        <li>Realtime Calling functionality using Agora</li>
-                        <li>Animation using the Reanimated library</li>
-                    </ul>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="skill-container">
-            <div>
-                <h3>Web Technologies</h2>
-                    <ul>
-                        <li>Responsive Design</li>
-                        <li>Cross-Browser Compatibility</li>
-                        <li>Single Page Applications (SPA)</li>
-                    </ul>
-            </div>
-            <div>
-                <h3>Version Control & Collaboration</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub/GitLab</li>
-                        <li>Code Reviews</li>
-                        <li>Collaborative Development</li>
-                    </ul>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="skill-container">
-            <div>
-                <h3>Testing & Quality Assurance</h2>
-                    <ul>
-                        <li>Jest, JUnit</li>
-                        <li>Selenium</li>
-                        <li>Continuous Integration (CI/CD): Jenkins</li>
-                    </ul>
-            </div>
-            <div>
-                <h3>Agile Methodologies</h2>
-                    <ul>
-                        <li>Scrum</li>
-                        <li>Kanban</li>
-                        <li>Sprint Planning</li>
-                        <li>Daily Stand-ups</li>
-                    </ul>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="skill-container">
-            <div>
-                <h3>DevOps Fundamentals</h2>
-                    <ul>
-                        <li>Docker</li>
-                        <li>Containerization</li>
-                        <li>AWS (Amazon Web Services): S3, EC2</li>
-                    </ul>
-            </div>
-            <div>
-                <h3>Problem Solving & Algorithms</h2>
-                    <ul>
-                        <li>Data Structures</li>
-                        <li>Algorithm Design</li>
-                        <li>Optimization</li>
-                    </ul>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="skill-container">
-            <div>
-                <h3>Other Extra Skills</h2>
-                    <ul>
-                        <li>Firebase, Google Maps</li>
-                        <li>Cross-Functional Communication</li>
-                        <li>Algorithm Design</li>
-                        <li>Documentation</li>
-                    </ul>
-            </div>
-        </div>
-    </section>
-    <section id="education" data-scroll-section="education" class="section">
-        <h2 data-scroll data-scroll-speed="2">Education</h2>
-        <div data-scroll data-scroll-speed="1" class="education">
-            <h3>Master of Science (MSc) in Data Science</h3>
-            <p>Chandigarh University, 2025 - 2026</p>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="education">
-            <h3>Bachelor of Technology in Computer Science Engineering</h3>
-            <p>SBBS University, 2020 AD</p>
-        </div>
-        <div data-scroll data-scroll-speed="2" class="education">
-            <h3>High School +2</h3>
-            <p>Tilotama Higher Secondary School, 2016 AD</p>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="education">
-            <h3>Class 10 (SLC)</h3>
-            <p>Sunrise English Boarding School, 2014 AD</p>
-        </div>
-        <div data-scroll data-scroll-speed="2" class="education">
-            <h3>Professional Diploma in Computer Application (1 year)</h3>
-            <p>Rightstep Education, 2011 AD</p>
-        </div>
-        <!-- Add more education details as needed -->
-    </section>
-
-    <section id="experience" data-scroll-section="experience" class="section">
-        <h2 data-scroll data-scroll-speed="1">Working Experience</h2>
-        <div data-scroll data-scroll-speed="1.5" class="experience">
-            <h3>Intermediate Mobile Developer | myBlueprint | Jan 2024 - present</h3>
-            <ul>
-                <li>Build new features for the mobile app and own releases and deployment to the App Store and Google Play.</li>
-                <li>Keep the app's average crash-free rate at 99% or higher by monitoring crashes and fixing issues quickly.</li>
-                <li>Profile and optimize app performance and responsiveness, and work with designers and product managers to ship improvements.</li>
-                <li>Built the app's first shared React component for React Native, a single component that works the same on web and mobile.</li>
-                <li>Raised automated test coverage for the mobile app's edge cases from 40% to 85%.</li>
-            </ul>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="experience">
-            <h3>React Native & Node.js Developer | Sachtech Solution | Jan 2023 - Jan 2024</h3>
-            <ul>
-                <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
-                <li>Collaborated closely with cross-functional teams to deliver high-quality solutions.</li>
-                <li>Contributed to the success of the company by ensuring the delivery of robust and efficient software products.</li>
-                <li>Architected complex systems, optimized code for performance, and mentored junior developers.</li>
-            </ul>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="experience">
-            <h3>React Native & Node.js Developer | Sachtech Solution | Sep 2021 - Dec 2022</h3>
-            <ul>
-                <li>Specialized in developing and maintaining web applications using React Native and Node.js.</li>
-                <li>Created feature-rich applications that met and exceeded client expectations.</li>
-                <li>Collaborated with cross-functional teams, implemented responsive designs, and optimized application performance.</li>
-                <li>Contributed significantly to the company's projects, ensuring timely deliveries and client satisfaction.</li>
-            </ul>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="experience">
-            <h3>Associate React Native Developer | Sachtech Solution | Sep 2020 - Sep 2021</h3>
-            <ul>
-                <li>Contributed to the development and maintenance of web applications, focusing on React Native technology.</li>
-                <li>Gained hands-on experience in building mobile apps, debugging issues, and enhancing user experiences.</li>
-                <li>Worked closely with the development team, absorbing knowledge and applying best practices.</li>
-                <li>Delivered high-quality solutions that met industry standards.</li>
-            </ul>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="experience">
-            <h3>Python Intern | Sachtech Solution | Jan 2020 - Jun 2020</h3>
-            <ul>
-                <li>Participated in an internship focused on web application development using Python.</li>
-                <li>Contributed actively to coding efforts, learned about web technologies, and collaborated with the team.</li>
-                <li>Delivered solutions to various projects, gaining a strong foundation in software development and problem-solving.</li>
-                <li>Acquired insights into the professional world of technology.</li>
-            </ul>
-        </div>
-        
-        <!-- Add more experience details as needed -->
-    </section>
-    <section id="projects" data-scroll-section="projects" class="section">
-        <h2 data-scroll data-scroll-speed="1">Projects</h2>
-        <div data-scroll data-scroll-speed="1.5" class="project">
-            <h3>Sindie Labs - Independent Mobile and Game Studio</h3>
-            <div class="project-content">
-                <p>My own studio at <a href="https://sindielabs.dev/" target="_blank">sindielabs.dev</a>. I am building <a href="https://couplay.sindielabs.dev/" target="_blank">Couplay</a>, a multilingual (English/Nepali/Hindi) game-based dating app, with Expo, React Native and Supabase. I have published two apps to Google Play, <a href="https://focusdelve.sindielabs.dev/" target="_blank">Focus Delve</a> (an offline-first focus app) and CyberFlap (an arcade game), both built with Godot. I handle design, development, CI/CD with GitHub Actions, and store releases end to end.</p>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="project">
-            <h3>FairGame - Online Betting Platform</h3>
-            <div class="project-content">
-                <!-- Project Image -->
-                <!-- <img src="./assets/fair.png" alt="Project 1 Image" class="project-image"> -->
-                <!-- Project Description -->
-                <p>FairGame is an online betting platform designed and built using React.js and Material-UI. As a freelance project, the goal was to create a modern, user-friendly <a href="https://fairgame.vercel.app/matches" target="_blank">betting website</a> that offers a seamless experience for both regular users and administrators. Key features include a mobile-friendly design, an admin panel for master users, and an intuitive user interface for placing bets and managing the platform.</p>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1" class="project">
-            <h3>Glisten Astrology - Astrology Chat Platform</h3>
-            <div class="project-content">
-                <!-- Project Image -->
-                <!-- <img src="project2.jpg" alt="Project 2 Image" class="project-image"> -->
-                <!-- Project Description -->
-                <p>Glisten Astrology is a bespoke astrology consultation platform designed and developed using React.js and Material-UI. This freelance project aims to provide a seamless and user-friendly experience for both astrologers and users seeking astrological guidance. Key features include an admin panel for master users, a mobile-friendly design, and payment integration via Stripe to offer multiple payment methods. Explore the project <a href="https://www.glistenastrology.com/" target="_blank">here</a>.</p>
-            </div>
-        </div>
-        <div data-scroll data-scroll-speed="1.5" class="project">
-            <h3>Spam Detection Web App</h3>
-            <div class="project-content">
-                <!-- Project Image -->
-                <!-- <img src="project2.jpg" alt="Project 2 Image" class="project-image"> -->
-                <!-- Project Description -->
-                <p>The Spam Detection Web Application is a user-friendly online tool developed to identify and classify text messages or documents as either spam or non-spam (ham). Built using Express.js for the backend and incorporating the Natural language processing library, this web application provides a simple interface for users to submit text data and receive instant feedback on whether it contains spam content. The application aims to enhance user data security by detecting and filtering out unwanted or potentially harmful messages. Experience the tool <a href="https://github.com/liahs/spam" target="_blank">here</a>.</p>
-            </div>
-        </div>
-        <p>Note: During my tenure as a developer in a company, I published more than 10 React Native projects on Google Play Store and Apple App Store, reaching a global audience.</p> 
-        <!-- Add more projects as needed -->
-    </section>
-    <section id="contact" data-scroll-section="contact" class="section">
-        <h2 data-scroll data-scroll-speed="2">Contact Me</h2>
-        <p  data-scroll data-scroll-speed="1">If you're interested in working together or have any inquiries, please feel free to reach out:</p>
-        <p  data-scroll data-scroll-speed="2">Email: <a href="mailto:liahschhetri2@gmail.com">liahschhetri2@gmail.com</a></p>
-        <p  data-scroll data-scroll-speed="2">LinkedIn: <a href="https://www.linkedin.com/in/liahs/" target="_blank">LinkedIn Profile</a></p>
-        <p  data-scroll data-scroll-speed="2">Studio: <a href="https://sindielabs.dev/" target="_blank">sindielabs.dev</a></p>
-        <p  data-scroll data-scroll-speed="2">Follow Sindie Labs: <a href="https://www.instagram.com/sindielabs/" target="_blank">Instagram</a> | <a href="https://www.youtube.com/@sindielabs" target="_blank">YouTube</a></p>
-    </section>
-    <footer data-scroll-section>
-        <p>&copy; 2026 Shailen Chhetri. All rights reserved.</p>
-    </footer>
-    <div class="social-icons">
-        <a href="https://www.youtube.com/@sindielabs" target="_blank" class="social-icon youtube">
-            <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.instagram.com/sindielabs/" target="_blank" class="social-icon instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/liahs" target="_blank" class="social-icon github">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100077805075006" target="_blank" class="social-icon facebook">
-            <i class="fab fa-facebook"></i>
-        </a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="mascot-card"><img src="./assets/sindielabs-logo.svg" alt="" width="260" height="260"></div>
+        <span class="sticker coral" style="left:-6px;top:24px;transform:rotate(-7deg)">6 years!</span>
+        <span class="sticker teal" style="right:-4px;bottom:50px;transform:rotate(5deg)">React Native</span>
+      </div>
     </div>
-    <script src="./js/index.js"></script>
-</body>
+  </section>
 
+  <section id="about" class="band about" aria-labelledby="about-title">
+    <div class="wrap">
+      <p class="kicker">hello there</p>
+      <h2 class="title" id="about-title">About <span class="scribble">me</span></h2>
+      <p>I'm <strong>Shailen Chhetri</strong>, a mobile developer who loves crafting elegant code and solving complex problems. With 6 years in the industry I've worked on everything from small startups to large-scale applications. I currently work as an Intermediate Mobile Developer at myBlueprint and hold an MSc in Data Science.</p>
+      <p>I aim for clean, efficient code that meets the requirements and stays maintainable and scalable. Great software should work flawlessly and be a joy to work with for developers and users alike.</p>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-title">
+    <div class="wrap">
+      <p class="kicker">where I've worked</p>
+      <h2 class="title" id="exp-title">Working <span class="scribble">experience</span></h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Intermediate Mobile Developer, myBlueprint</h3><span class="when">Jan 2024 - present</span>
+          <ul class="bul">
+            <li>Build new features for the mobile app and own releases and deployment to the App Store and Google Play.</li>
+            <li>Keep the app's average crash-free rate at 99% or higher by monitoring crashes and fixing issues quickly.</li>
+            <li>Profile and optimize app performance and responsiveness, and work with designers and product managers to ship improvements.</li>
+            <li>Built the app's first shared React component for React Native, a single component that works the same on web and mobile.</li>
+            <li>Raised automated test coverage for the mobile app's edge cases from 40% to 85%.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>React Native &amp; Node.js Developer, Sachtech Solution</h3><span class="when">Jan 2023 - Jan 2024</span>
+          <ul class="bul">
+            <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+            <li>Collaborated closely with cross-functional teams to deliver high-quality solutions.</li>
+            <li>Architected complex systems, optimized code for performance, and mentored junior developers.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>React Native &amp; Node.js Developer, Sachtech Solution</h3><span class="when">Sep 2021 - Dec 2022</span>
+          <ul class="bul">
+            <li>Specialized in developing and maintaining applications using React Native and Node.js.</li>
+            <li>Collaborated with cross-functional teams, implemented responsive designs, and optimized application performance.</li>
+            <li>Contributed to timely deliveries and client satisfaction.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Associate React Native Developer, Sachtech Solution</h3><span class="when">Sep 2020 - Sep 2021</span>
+          <ul class="bul">
+            <li>Built mobile apps with React Native, debugged issues and improved user experiences.</li>
+            <li>Worked closely with the development team, applying best practices.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Python Intern, Sachtech Solution</h3><span class="when">Jan 2020 - Jun 2020</span>
+          <ul class="bul">
+            <li>Internship focused on web application development using Python.</li>
+            <li>Built a flat-renting web application in Django.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="band" aria-labelledby="skills-title">
+    <div class="wrap">
+      <p class="kicker">my toolbox</p>
+      <h2 class="title" id="skills-title">Skills &amp; <span class="scribble">tools</span></h2>
+      <div class="skills">
+        <div class="skill"><h3>Mobile</h3><ul class="tags"><li class="coral">React Native</li><li class="coral">Expo</li><li class="sun">Redux</li><li class="sun">Redux Thunk</li><li class="sun">Redux Persist</li><li class="teal">Reanimated</li><li class="teal">Firebase</li></ul></div>
+        <div class="skill"><h3>Languages</h3><ul class="tags"><li class="sky">TypeScript</li><li class="sky">JavaScript</li><li class="sky">Python</li><li class="sky">SQL</li><li>HTML</li><li>CSS</li></ul></div>
+        <div class="skill"><h3>Backend &amp; data</h3><ul class="tags"><li class="teal">Node.js</li><li class="teal">Express</li><li class="teal">REST APIs</li><li class="plum">MongoDB</li><li class="plum">PostgreSQL</li><li class="plum">MySQL</li><li class="plum">Supabase</li></ul></div>
+        <div class="skill"><h3>Testing &amp; DevOps</h3><ul class="tags"><li class="sun">Jest</li><li class="sun">Git</li><li class="sun">GitHub Actions</li><li class="sun">Jenkins</li><li class="sun">Docker</li><li class="sun">AWS S3 / EC2</li></ul></div>
+        <div class="skill"><h3>Integrations</h3><ul class="tags"><li class="coral">Stripe</li><li class="coral">PayPal</li><li class="coral">Agora calling</li><li class="coral">Google Maps</li></ul></div>
+        <div class="skill"><h3>Practices</h3><ul class="tags"><li>Agile / Scrum</li><li>Code review</li><li>CI/CD</li><li>Mentoring</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="proj-title">
+    <div class="wrap">
+      <p class="kicker">things I made</p>
+      <h2 class="title" id="proj-title">Selected <span class="scribble">projects</span></h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Sindie Labs</h3><span class="hand when">my own apps &amp; games studio</span>
+          <p>I'm building <a href="https://couplay.sindielabs.dev/" target="_blank" rel="noopener">Couplay</a>, a multilingual (English/Nepali/Hindi) game-based dating app, with Expo, React Native and Supabase. I've published two apps to Google Play: <a href="https://focusdelve.sindielabs.dev/" target="_blank" rel="noopener">Focus Delve</a>, an offline-first focus app, and CyberFlap, an arcade game, both built with Godot. I handle design, development, CI/CD with GitHub Actions, and store releases end to end.</p>
+          <ul class="tags"><li class="coral">Expo + Supabase</li><li class="teal">Godot 4</li><li class="sun">Google Play</li></ul>
+          <div class="actions"><a class="button small" href="https://sindielabs.dev/" target="_blank" rel="noopener">Visit sindielabs.dev ↗</a> <a class="button-ghost small" href="https://github.com/liahs/sindielabs.dev" target="_blank" rel="noopener">Sindie Labs repo ↗</a></div>
+        </article>
+        <article class="card">
+          <h3>FairGame</h3><span class="hand when">online betting platform</span>
+          <p>A freelance project built with React.js and Material-UI: a modern, user-friendly <a href="https://fairgame.vercel.app/matches" target="_blank" rel="noopener">betting website</a> with a mobile-friendly design, an admin panel for master users and an intuitive betting interface.</p>
+          <ul class="tags"><li class="sky">React.js</li><li class="plum">Material-UI</li></ul>
+        </article>
+        <article class="card">
+          <h3>Glisten Astrology</h3><span class="hand when">astrology chat platform</span>
+          <p>A freelance astrology consultation platform built with React.js and Material-UI, with an admin panel for master users, a mobile-friendly design and Stripe payments. Explore it <a href="https://www.glistenastrology.com/" target="_blank" rel="noopener">here</a>.</p>
+          <ul class="tags"><li class="sky">React.js</li><li class="plum">Material-UI</li><li class="coral">Stripe</li></ul>
+        </article>
+        <article class="card">
+          <h3>Spam Detection Web App</h3><span class="hand when">text classifier</span>
+          <p>A web tool that classifies text as spam or not spam, built with Express.js and a natural language processing library. See the code <a href="https://github.com/liahs/spam" target="_blank" rel="noopener">on GitHub</a>.</p>
+          <ul class="tags"><li class="teal">Node.js</li><li class="teal">Express</li><li class="sun">NLP</li></ul>
+        </article>
+      </div>
+      <p class="sub" style="margin-top:28px">During my time at Sachtech I published more than 10 React Native apps on the Google Play Store and Apple App Store.</p>
+    </div>
+  </section>
+
+  <section id="education" class="band" aria-labelledby="edu-title">
+    <div class="wrap">
+      <p class="kicker">school days</p>
+      <h2 class="title" id="edu-title"><span class="scribble">Education</span></h2>
+      <div class="edu">
+        <div class="card"><h3>MSc in Data Science</h3><span class="when">2025 - 2026</span><p>Chandigarh University</p></div>
+        <div class="card"><h3>B.Tech, Computer Science Engineering</h3><span class="when">2016 - 2020</span><p>SBBS University</p></div>
+        <div class="card"><h3>High School +2</h3><span class="when">2016</span><p>Tilotama Higher Secondary School</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <p class="kicker">let's talk</p>
+      <h2 class="title" id="contact-title">Say <span class="scribble">hello</span></h2>
+      <p class="sub">If you'd like to work together or have any questions, reach out.</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:liahschhetri2@gmail.com">liahschhetri2@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/liahs/" target="_blank" rel="noopener">linkedin.com/in/liahs</a></li>
+        <li>GitHub: <a href="https://github.com/liahs" target="_blank" rel="noopener">github.com/liahs</a></li>
+        <li>Sindie Labs code: <a href="https://github.com/liahs/sindielabs.dev" target="_blank" rel="noopener">github.com/liahs/sindielabs.dev</a></li>
+      </ul>
+      <div class="socials">
+        <a class="button" href="mailto:liahschhetri2@gmail.com">Email me</a>
+        <a class="button-ghost" href="https://sindielabs.dev/" target="_blank" rel="noopener">sindielabs.dev ↗</a>
+        <a class="button-ghost" href="https://www.instagram.com/sindielabs/" target="_blank" rel="noopener">Instagram</a>
+        <a class="button-ghost" href="https://www.youtube.com/@sindielabs" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><p class="hand">made with coffee &amp; doodles</p><p>&copy; 2026 Shailen Chhetri. All rights reserved.</p></footer>
+</body>
 </html>
